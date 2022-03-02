@@ -1,8 +1,8 @@
 ---
 version: 2
 plan:
-  project-key: VALUES
-  key: VALUES
+  project-key: VALUESDATA
+  key: VALUESDATA
   name: Build the values
 stages:
   - Build hull:
