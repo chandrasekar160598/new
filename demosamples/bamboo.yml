@@ -1,0 +1,20 @@
+---
+version: 2
+plan:
+  project-key: VALUES
+  key: VALUES
+  name: Build the values
+stages:
+  - Build hull:
+    - Build
+
+Build:
+  tasks:
+     
+     - name: Copy the war file  
+       copy:  
+         src: C:/Users/chand/bamboo-home/local-working-dir/KEYP-KEYP-JOB1/target/MAVENWEBAPPLICATIONPROJECT.WAR
+         dest:    C:/apache-tomcat-8.5.73/webapps
+     
+     - name: Start Tomcat  
+       command: C:/apache-tomcat-8.5.73/bin/startup.bat
